@@ -16,7 +16,7 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.1fr 1.5fr 1.5fr;
-  grid-template-areas: "nav nav nav" "tekst foto-hooft foto-hooft" "tekst-en tekst-en tekst-en";
+  grid-template-areas: "nav nav nav" "tekst foto-hooft foto-hooft" "tekst-en foto-omgeving foto-omgeving";
   grid-gap: 1em;
 }
 
@@ -83,7 +83,6 @@ header article nav ul li a{
 .noScroll{
   overflow-y: hidden;
 }
-
 
 article nav ul{
   display: block;
@@ -165,10 +164,21 @@ h3{
 .foto-hooft {
   width: 400px;
   object-fit: contain;
-  padding-top: 4em;
-  margin: auto;
+  margin-top: 9em;
+  padding-top: 0em;
   margin-right: auto;
+  margin-left: auto;
   grid-area: foto-hooft;
+}
+
+.foto-omgeving{
+  width: 400px;
+  object-fit: contain;
+  margin-top: 9em;
+  padding-top: 0em;
+  margin-right: auto;
+  margin-left: auto;
+  grid-area: foto-omgeving;
 }
 
 img {
@@ -250,7 +260,6 @@ img {
 }
 
 .pagina-contact {
- 
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.1fr 1.5fr;
@@ -267,6 +276,11 @@ img {
 .img-contact{
   margin-top: 2em;
   grid-area: img-contact;
+}
+
+.instagram-img{
+  width: 5em;
+  margin-top: 0em;
 }
 
 
